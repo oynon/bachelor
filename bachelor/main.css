@@ -1,0 +1,128 @@
+.kosugi-regular {
+    font-family: "Kosugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MS PGothic";
+    src: url("assets/MS PGothic.ttf");
+}
+
+body {
+    background-color: white;
+    font-family: "Kosugi", "MS PGothic";
+    font-size: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "1 2 3 4"
+        "5 6 7 8"
+        "9 10 11 12"
+        "13 14 15 16";
+    grid-template-columns: 250px 250px 300px 250px;
+    grid-template-rows: 20px 180px 350px 15px;
+    width: 1000px;
+    margin: auto;
+}
+
+.container div {
+    padding: 5px;
+}
+
+.minihead {
+    background-color: black;
+    color: white;
+}
+
+.head {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    border-bottom: dotted 1px;
+}
+
+.left {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    border-right: dotted 1px;
+    border-bottom: dotted 1px;
+}
+
+.top {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    border-bottom: dotted 1px;
+    overflow: hidden;
+}
+
+.botleft {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    border-bottom: dotted 1px;
+    border-right: dotted 1px;
+}
+
+.botright {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    border-bottom: dotted 1px;
+    overflow: hidden;
+}
+
+.botright iframe {
+    transform: translateY(-60px);
+}
+
+.right {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 3;
+    border-left: dotted 1px;
+    border-bottom: dotted 1px;
+}
+
+.foot {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    font-size: 12px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.313rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::selection {
+    background: black;
+    color: white;
+}
+
+a {
+    color: #5e5e5e;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+li {
+    list-style-type: square;
+    color: black;
+}
+}
