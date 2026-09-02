@@ -54,7 +54,7 @@ body {
     grid-column: 2 / span 2;
     grid-row: 2 / span 1;
     border-bottom: dotted 1px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .botleft {
@@ -80,6 +80,14 @@ body {
     grid-row: 1 / span 3;
     border-left: dotted 1px;
     border-bottom: dotted 1px;
+    display: flex;
+  	flex-direction: column;
+  	align-items: stretch;
+  	gap: 15px;
+  	width: 100%;
+  	margin-top: 15px;
+  	overflow: auto;
+  	overflow-x: hidden;
 }
 
 .foot {
@@ -124,5 +132,4 @@ a:hover {
 li {
     list-style-type: square;
     color: black;
-}
 }
