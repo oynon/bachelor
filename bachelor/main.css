@@ -48,6 +48,7 @@ body {
     grid-row: 1 / span 3;
     border-right: dotted 1px;
     border-bottom: dotted 1px;
+    overflow: hidden;
 }
 
 .top {
@@ -62,6 +63,7 @@ body {
     grid-row: 3 / span 1;
     border-bottom: dotted 1px;
     border-right: dotted 1px;
+    overflow: auto;
 }
 
 .botright {
@@ -72,7 +74,8 @@ body {
 }
 
 .botright iframe {
-    transform: translateY(-60px);
+    transform: translateY(-70px);
+    overflow-x: hidden;
 }
 
 .right {
@@ -80,14 +83,25 @@ body {
     grid-row: 1 / span 3;
     border-left: dotted 1px;
     border-bottom: dotted 1px;
-    display: flex;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.webrings {
+	display: flex;
   	flex-direction: column;
   	align-items: stretch;
   	gap: 15px;
   	width: 100%;
+  	height: 500px;
   	margin-top: 15px;
   	overflow: auto;
   	overflow-x: hidden;
+}
+
+.neighbors {
+	overflow: auto;
+	height: 170px;
 }
 
 .foot {
