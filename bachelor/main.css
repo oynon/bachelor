@@ -63,7 +63,7 @@ body {
     grid-row: 3 / span 1;
     border-bottom: dotted 1px;
     border-right: dotted 1px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .botright {
@@ -99,9 +99,14 @@ body {
   	overflow-x: hidden;
 }
 
+.updates {
+	overflow: auto;
+	height: 300px;
+}
+
 .neighbors {
 	overflow: auto;
-	height: 170px;
+	height: 130px;
 }
 
 .foot {
