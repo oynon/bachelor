@@ -1,0 +1,59 @@
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
+.site-box {
+    text-align: center;
+    background-image: none; /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-repeat: no-repeat;
+    color: #000000;
+    font-size: 12px;
+}
+.site-box > a > p {
+    color: black;
+    font-weight: bold;
+    top: -25px;
+    left: 20px;
+}
+
+.site-box > a > span {
+    display: none;
+}
+
+.site-box .sitefeature {
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #000000;
+}
+
+.site-box .sitefeature img {
+	display: none;
+}
+
+/* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
+.follow {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #000000;
+	border-color: #000000;
+	color: #ffffff;
+}
+
+/* Style for your post box (must start with ".post-box") */
+.post-box {
+	background-color: #000000;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.post-box .post-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.post-box a {
+    color: #ffffff;
+}
