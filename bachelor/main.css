@@ -106,7 +106,7 @@ body {
 
 .neighbors {
 	overflow: auto;
-	height: 130px;
+	height: 80px;
 }
 
 .foot {

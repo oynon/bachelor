@@ -21,7 +21,7 @@ body {
         "1 2 3"
         "4 5 6";
     grid-template-columns: 250px 250px 300px 250px;
-    grid-template-rows: 20px 180px 350px 15px;
+    grid-template-rows: 20px 100px 200px 15px;
     width: 1000px;
     margin: auto;
 }
@@ -39,6 +39,43 @@ body {
 .middle {
     grid-column: 1 / span 3;
     grid-row: 2;
+    display: grid;
+    grid-template-areas:
+        "1 2 3 4"
+        "5 6 7 8"
+        "9 10 11 12"
+        "13 14 15 16";
+    grid-template-columns: 250px 250px 300px 250px;
+    grid-template-rows: 20px 130px 150px 15px;
+}
+
+.intro {
+	grid-column: 1 / span 2;
+	grid-row: 2;
+}
+
+.characters {
+	grid-column: 3 / span 1;
+	grid-row: 2;
+}
+
+.characters img {
+	width: 75px;
+}
+
+.personality {
+	grid-column: 1 / span 2;
+	grid-row: 3;
+}
+
+.game {
+	grid-column: 1;
+	grid-row: 4;
+}
+
+.interests {
+	grid-column: 2 / span 2;
+	grid-row: 4;
 }
 
 /* width */
